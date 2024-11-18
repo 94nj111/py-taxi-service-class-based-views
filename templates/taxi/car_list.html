@@ -9,5 +9,7 @@
 				<li><a href="{{ car.get_absolute_url }}">{{ car.manufacturer.name }}: {{ car.model }}</a></li>
 			{% endfor %}
 		</ul>
+	{% else %}
+  		<p>There are no cars.</p>
 	{% endif %}
 {% endblock %}
