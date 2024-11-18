@@ -27,7 +27,7 @@ class CarListView(generic.ListView):
     queryset = Car.objects.select_related("manufacturer")
 
 
-class CarDetaiView(generic.DetailView):
+class CarDetailView(generic.DetailView):
     model = Car
     queryset = Car.objects.select_related("manufacturer")
 
